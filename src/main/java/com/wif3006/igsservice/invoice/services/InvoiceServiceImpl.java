@@ -21,6 +21,7 @@ import com.wif3006.igsservice.product.models.ProductModel;
 import com.wif3006.igsservice.product.services.ProductService;
 import com.wif3006.igsservice.shared.constant.InvoiceErrorConstant;
 import com.wif3006.igsservice.shared.exception.InvoiceException;
+import com.wif3006.igsservice.shared.utils.ObjectUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -118,7 +119,9 @@ public class InvoiceServiceImpl implements InvoiceService {
             }
 
             invoiceRepository.deleteById(id);
+            log.info("run this 1");
             invoiceItemRepository.deleteAllByInvId(id);
+            log.info("run this 2");
         } catch (Exception e) {
             throw new InvoiceException(InvoiceErrorConstant.INVALID_INVOICE);
         }

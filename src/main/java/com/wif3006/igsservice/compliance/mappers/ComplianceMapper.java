@@ -14,11 +14,9 @@ public interface ComplianceMapper {
     List<DiscountModel> discountEntityListToDiscountModelList(List<DiscountEntity> discountEntityList);
 
     DiscountEntity discountModelToDiscountEntity(DiscountModel discountModel);
-    List<DiscountEntity> discountModelListToDiscountEntityList(List<DiscountModel> discountModelList);
 
     TaxModel taxEntityToTaxModel(TaxEntity taxEntity);
     List<TaxModel> taxEntityListToTaxModelList(List<TaxEntity> taxEntityList);
 
     TaxEntity taxModelToTaxEntity(TaxModel taxModel);
-    List<TaxEntity> taxModelListToTaxEntityList(List<TaxModel> taxModelList);
 }

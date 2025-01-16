@@ -42,8 +42,6 @@ public class PdfServiceImpl implements PdfService {
             document.open();
 
             InputStream inputStream = new ByteArrayInputStream(htmlContent.getBytes("UTF-8"));
-//            document.add(new Paragraph("Generated Invoice"));
-//            document.add(new Paragraph(htmlContent, new Font(Font.FontFamily.HELVETICA, 10)));
             XMLWorkerHelper.getInstance().parseXHtml(pdfWriter, document, inputStream, null, Charset.forName("UTF-8"));
             document.close();
 

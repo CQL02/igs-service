@@ -14,7 +14,6 @@ public interface InvoiceMapper {
     List<InvoiceModel> invoiceEntityListToInvoiceModelList(List<InvoiceEntity> invoiceEntityList);
 
     InvoiceEntity invoiceModelToInvoiceEntity(InvoiceModel invoiceModel);
-    List<InvoiceEntity> invoiceModelListToInvoiceEntityList(List<InvoiceModel> invoiceModelList);
 
     InvoiceItemModel invoiceItemEntityToInvoiceItemModel(InvoiceItemEntity invoiceItemEntity);
     List<InvoiceItemModel> invoiceItemEntityListToInvoiceItemModelList(List<InvoiceItemEntity> invoiceItemEntityList);

@@ -6,7 +6,6 @@ import com.wif3006.igsservice.customer.models.CustomerModel;
 import com.wif3006.igsservice.customer.repositories.CustomerRepository;
 import com.wif3006.igsservice.shared.constant.CustomerErrorConstant;
 import com.wif3006.igsservice.shared.exception.CustomerException;
-import com.wif3006.igsservice.shared.utils.ObjectUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

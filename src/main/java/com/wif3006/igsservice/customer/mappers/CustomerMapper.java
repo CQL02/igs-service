@@ -13,6 +13,4 @@ public interface CustomerMapper {
     List<CustomerModel> customerEntityListToCustomerModelList(List<CustomerEntity> customerEntities);
 
     CustomerEntity customerModelToCustomerEntity(CustomerModel customerModel);
-
-    List<CustomerEntity> customerModelListToCustomerEntityList(List<CustomerModel> customerModelList);
 }

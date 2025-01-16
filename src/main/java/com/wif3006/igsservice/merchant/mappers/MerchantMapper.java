@@ -14,6 +14,4 @@ public interface MerchantMapper {
     List<MerchantModel> merchantEntityListToMerchantModelList(List<MerchantEntity> userEntities);
 
     MerchantEntity merchantModelToMerchantEntity(MerchantModel merchantModel);
-
-    List<MerchantEntity> merchantModelListToMerchantEntityList(List<MerchantModel> merchantModelList);
 }
